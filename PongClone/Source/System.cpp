@@ -29,6 +29,22 @@ void System::Init() {
     printf("IMG_Init: Failed to init required jpg and png support!\n");
     printf("IMG_Init: %s\n", IMG_GetError());
   }
+
+
+}
+
+void System::GameLoop() {
+
+  //Background Color (rgb, alpha)
+
+  SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
+
+  //Clear Screen
+  SDL_RenderClear(renderer);
+
+  SDL_RenderPresent(renderer);
+
+  SDL_Delay(1000);
 }
 
 

@@ -12,6 +12,7 @@ class System {
   public:
   System();
   void Init();
+  void GameLoop();
   ~System();
 };
 
