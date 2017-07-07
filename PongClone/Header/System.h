@@ -1,13 +1,21 @@
 #ifndef SYSTEM_H
 #define SYSTEM_H
+
 #include <SDL.h>
 #include <SDL_image.h>
 #include <iostream>
 
+#include "Input.h"
+#include "GameObjects.h"
+
 class System {
   private:
-  SDL_Window* window;
-  SDL_Renderer* renderer;
+ 
+  //SDL_Renderer* renderer;
+
+  Render render;
+  Input input;
+  Player player;
 
   public:
   System();
