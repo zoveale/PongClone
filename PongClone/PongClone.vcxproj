@@ -87,7 +87,7 @@
     <Link>
       <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>C:\Users\zoeve\Source\Repos\PongClone\PongClone\PongClone\resources;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\zoeve\Source\Repos\PongClone\PongClone\PongClone;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -110,7 +110,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>SDL2main.lib;SDL2_image.lib;SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>C:\Users\zoeve\Source\Repos\PongClone\PongClone\PongClone\resources;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\zoeve\Source\Repos\PongClone\PongClone\PongClone;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -135,7 +135,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header\GameObjects.h" />
-    <ClInclude Include="Header\GLOBAL.h" />
     <ClInclude Include="Header\Input.h" />
     <ClInclude Include="Header\Render.h" />
     <ClInclude Include="Header\System.h" />

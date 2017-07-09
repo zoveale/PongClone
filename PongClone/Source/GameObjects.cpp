@@ -1,12 +1,10 @@
 #include "..\Header\GameObjects.h"
 
-
-
 GameObjects::GameObjects() {
   
   rect = {0, 0, 0, 0};
   texture = NULL;
-  renderer = NULL;
+  object_renderer = NULL;
 }
 
 void GameObjects::Initialization(int x, int y, int w, int h) {
@@ -14,16 +12,11 @@ void GameObjects::Initialization(int x, int y, int w, int h) {
 }
 
 void GameObjects::SetRender(SDL_Renderer * r) {
-  this->renderer = r;
+  this->object_renderer = r;
 }
-
-void GameObjects::Draw() {
-  SDL_RenderCopy(renderer, texture, NULL, &rect);
-}
-
 
 void GameObjects::Textures(std::string x) {
-  texture = render.loadTexture(x);
+  texture = render.loadTexture(x, this->object_renderer);
 }
 
 GameObjects::~GameObjects() {}

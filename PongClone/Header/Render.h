@@ -8,16 +8,16 @@
 
 class Render {
   private:
-  SDL_Window* window;
+  
   SDL_Texture* newTexture;
   SDL_Surface* loadedSurface;
-  SDL_Renderer* renderer;
+  //SDL_Renderer* renderer;
 
   public:
   Render();
-  SDL_Texture* loadTexture(std::string path);
-  void Window();
-  SDL_Renderer* base();
+  SDL_Texture* loadTexture(std::string path, SDL_Renderer* r);
+  
+  
   ~Render();
 };
 

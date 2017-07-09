@@ -38,9 +38,6 @@
     <ClInclude Include="Header\Render.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header\GLOBAL.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Header\Input.h">
       <Filter>Header Files</Filter>
     </ClInclude>

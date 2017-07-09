@@ -11,16 +11,19 @@
 class System {
   private:
  
-  //SDL_Renderer* renderer;
+  SDL_Renderer* base_renderer;
+  SDL_Window* window;
 
-  Render render;
+  //Render render;
   Input input;
   Player player;
 
   public:
   System();
   void Init();
+  void LoadMedia();
   void GameLoop();
+  
   ~System();
 };
 
