@@ -19,6 +19,9 @@ class Input {
   Input();
   bool Quit();
   void Process();
+
+  KEY_STATE KeyPress();
+
   ~Input();
 };
 

@@ -15,6 +15,10 @@ void GameObjects::SetRender(SDL_Renderer * r) {
   this->object_renderer = r;
 }
 
+SDL_Rect GameObjects::Rect() {
+  return rect;
+}
+
 void GameObjects::Textures(std::string x) {
   texture = render.loadTexture(x, this->object_renderer);
 }

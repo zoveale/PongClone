@@ -55,5 +55,8 @@ void Input::Process() {
 
 }
 
+KEY_STATE Input::KeyPress() {
+  return KEY;
+}
 
 Input::~Input() {}

@@ -17,6 +17,8 @@ class System {
   //Render render;
   Input input;
   Player player;
+  Ball ball;
+  Computer computer;
 
   public:
   System();

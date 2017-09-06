@@ -6,6 +6,7 @@ int main(int argc, char* args[]) {
   
   
   system.Init();
+  system.LoadMedia();
   system.GameLoop();
   system.~System();
 

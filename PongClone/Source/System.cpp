@@ -33,12 +33,18 @@ void System::Init() {
 
 
   
-  player.SetRender(base_renderer);
-  player.Start();
+  
 }
 
 void System::LoadMedia() {
+  player.SetRender(base_renderer);
+  player.Start();
 
+  computer.SetRender(base_renderer);
+  computer.Start();
+
+  ball.SetRender(base_renderer);
+  ball.Start();
 }
 
 void System::GameLoop() {
@@ -46,14 +52,22 @@ void System::GameLoop() {
     input.Process();
     
     //FIX ME::Update positions
-    player.Update();
+    player.Update(input.KeyPress());
+    ball.Update(input.KeyPress());
+    computer.Update(input.KeyPress());
 
+    //FIX ME::Check Collisions
     
+    ball.Collision(player.Rect(), ball.Rect());
+    ball.Collision(computer.Rect(), ball.Rect());
+
     //Clear Screen
     SDL_RenderClear(base_renderer);
 
     //draw position
     player.Draw();
+    computer.Draw();
+    ball.Draw();
 
     //Update Screem
     SDL_RenderPresent(base_renderer);
